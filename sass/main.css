@@ -37,7 +37,7 @@
   padding-top: 100px;
 }
 .container-fluid .gradient, .container-xxl .gradient, .container-xl .gradient, .container-lg .gradient, .container-md .gradient, .container-sm .gradient {
-  background: linear-gradient(to right, #605dff, #3d67ff); /* Change to your desired gradient */
+  background: linear-gradient(to right, #605dff, #3d67ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -159,6 +159,35 @@ footer .copyright p {
   footer .copyright {
     text-align: center;
   }
+}
+
+.navbar-toggler {
+  border-color: white;
+}
+.navbar-toggler.collapsed .navbar-toggler-icon {
+  background-image: none;
+}
+.navbar-toggler .navbar-toggler-icon {
+  background-image: none;
+}
+.navbar-toggler:focus {
+  outline: none;
+}
+.navbar-toggler:before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  position: relative;
+}
+.navbar-toggler:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  position: relative;
 }
 
 /*!
