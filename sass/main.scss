@@ -2,11 +2,15 @@ $heading: "Inter Tight", serif;
 $main-color: #3d67ff;
 $secondary-color:rgb(18, 219, 0);
 
-
+@font-face {
+  font-family: 'TWKEverett';
+  src: url('../fonts/TWKEverett-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 .navbar {
     background-color: black;
-    font-family: "Inter Tight", sans-serif;
-    font-weight: 700; 
+    font-family: 'TWKEverett', sans-serif;
     .nav-items {
         font-weight: 500; 
         display: flex; // Ensure the collapse area is also a flex container
@@ -33,19 +37,31 @@ $secondary-color:rgb(18, 219, 0);
     }
 }
 
-.container-fluid{
-    background-color: black;
-    font-family: $heading;
+@mixin gradient-background($color1, $color2) {
+  background: linear-gradient(to right, $color1, $color2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-    .top{
-        padding-top: 100px;
-    }
-    
-    .gradient {
-      background: linear-gradient(to right, #605dff, $main-color); 
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+@mixin padding-top($amount) {
+  padding-top: $amount;
+}
+
+@mixin font-family($font) {
+  font-family: $font;
+}
+
+.container-fluid {
+  background-color: black;
+  @include font-family($heading);
+
+  .top {
+    @include padding-top(100px);
+  }
+
+  .gradient {
+    @include gradient-background(#605dff, $main-color);
+  }
 }
 
 .container-fluid{
@@ -158,7 +174,7 @@ footer {
       list-style: none;
       padding: 0;
     }
-  
+    
     li {
       margin-bottom: 5px;
     }

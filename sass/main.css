@@ -1,8 +1,13 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "TWKEverett";
+  src: url("../fonts/TWKEverett-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 .navbar {
   background-color: black;
-  font-family: "Inter Tight", sans-serif;
-  font-weight: 700;
+  font-family: "TWKEverett", sans-serif;
 }
 .navbar .nav-items {
   font-weight: 500;
