@@ -2,10 +2,10 @@
 .navbar {
   background-color: black;
   font-family: "Inter Tight", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
 }
 .navbar .nav-items {
-  font-weight: 300;
+  font-weight: 500;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -14,16 +14,56 @@
   color: white;
 }
 .navbar .nav-link:hover {
-  color: gray;
+  color: #3d67ff;
 }
 .navbar .navbar-brand {
   color: white;
 }
 .navbar .navbar-brand:hover {
-  color: gray;
+  color: #3d67ff;
 }
-.navbar .btn-primary {
+.navbar .btn {
+  background-color: white;
+}
+.navbar .btn:hover {
+  color: #3d67ff;
+}
+
+.container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
   background-color: black;
+  font-family: "Inter Tight", serif;
+}
+.container-fluid .gradient, .container-xxl .gradient, .container-xl .gradient, .container-lg .gradient, .container-md .gradient, .container-sm .gradient {
+  background: linear-gradient(to right, #605dff, #3d67ff); /* Change to your desired gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container-fluid .container-xl .row .col-md .card, .container-xxl .container-xl .row .col-md .card, .container-xl .container-xl .row .col-md .card, .container-lg .container-xl .row .col-md .card, .container-md .container-xl .row .col-md .card, .container-sm .container-xl .row .col-md .card {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+.container-fluid .container-xl .display-5, .container-xxl .container-xl .display-5, .container-xl .container-xl .display-5, .container-lg .container-xl .display-5, .container-md .container-xl .display-5, .container-sm .container-xl .display-5 {
+  color: white;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: black;
+  position: relative;
+}
+
+.circle img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /*!

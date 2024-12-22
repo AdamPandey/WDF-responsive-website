@@ -1,10 +1,13 @@
+$heading: "Inter Tight", serif;
+$main-color: #3d67ff;
+
 
 .navbar {
     background-color: black;
     font-family: "Inter Tight", sans-serif;
-    font-weight: 500; 
+    font-weight: 700; 
     .nav-items {
-        font-weight: 300; 
+        font-weight: 500; 
         display: flex; // Ensure the collapse area is also a flex container
         justify-content: center; // Center the nav items
         width: 100%; // Make sure it takes full width
@@ -12,18 +15,62 @@
     .nav-link {
         color: white; 
         &:hover {
-            color: gray;
+            color: $main-color;
         }
     }
     .navbar-brand {
         color: white; 
         &:hover {
-            color: gray;
+            color: $main-color;
         }
     }
-    .btn-primary{
-        background-color: black;
+    .btn{
+        background-color: white;
+        &:hover {
+            color: $main-color;
+        }
     }
+}
+
+.container-fluid{
+    background-color: black;
+    font-family: $heading;
+    
+    .gradient {
+      background: linear-gradient(to right, #605dff, $main-color); /* Change to your desired gradient */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+}
+
+.container-fluid{
+    .container-xl .row .col-md .card{
+        background-color: rgba(128, 128, 128, 0.5);
+    }
+
+    .container-xl .display-5{
+        color: white; 
+    }
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+}
+  
+.circle img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 @import"../node_modules/bootstrap/scss/bootstrap.scss";
