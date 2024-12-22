@@ -35,6 +35,10 @@ $main-color: #3d67ff;
 .container-fluid{
     background-color: black;
     font-family: $heading;
+
+    .top{
+        padding-top: 100px;
+    }
     
     .gradient {
       background: linear-gradient(to right, #605dff, $main-color); /* Change to your desired gradient */
@@ -62,9 +66,9 @@ $main-color: #3d67ff;
 }
 
 .circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
     overflow: hidden;
     background-color: black;
     position: relative;
@@ -79,6 +83,11 @@ $main-color: #3d67ff;
     height: auto;
     max-width: 100%;
     max-height: 100%;
+}
+
+.learn{
+    padding:300px;
+    
 }
 
 @import"../node_modules/bootstrap/scss/bootstrap.scss";

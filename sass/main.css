@@ -33,6 +33,9 @@
   background-color: black;
   font-family: "Inter Tight", serif;
 }
+.container-fluid .top, .container-xxl .top, .container-xl .top, .container-lg .top, .container-md .top, .container-sm .top {
+  padding-top: 100px;
+}
 .container-fluid .gradient, .container-xxl .gradient, .container-xl .gradient, .container-lg .gradient, .container-md .gradient, .container-sm .gradient {
   background: linear-gradient(to right, #605dff, #3d67ff); /* Change to your desired gradient */
   -webkit-background-clip: text;
@@ -53,9 +56,9 @@
 }
 
 .circle {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border-radius: 10%;
   overflow: hidden;
   background-color: black;
   position: relative;
@@ -70,6 +73,10 @@
   height: auto;
   max-width: 100%;
   max-height: 100%;
+}
+
+.learn {
+  padding: 300px;
 }
 
 /*!
