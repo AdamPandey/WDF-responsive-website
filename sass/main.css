@@ -42,6 +42,12 @@
 .container-fluid .container-xl .row .col-md .card, .container-xxl .container-xl .row .col-md .card, .container-xl .container-xl .row .col-md .card, .container-lg .container-xl .row .col-md .card, .container-md .container-xl .row .col-md .card, .container-sm .container-xl .row .col-md .card {
   background-color: rgba(128, 128, 128, 0.5);
 }
+.container-fluid .container-xl .row .col-md .card .card-title, .container-xxl .container-xl .row .col-md .card .card-title, .container-xl .container-xl .row .col-md .card .card-title, .container-lg .container-xl .row .col-md .card .card-title, .container-md .container-xl .row .col-md .card .card-title, .container-sm .container-xl .row .col-md .card .card-title {
+  color: white;
+}
+.container-fluid .container-xl .row .col-md .card .card-text, .container-xxl .container-xl .row .col-md .card .card-text, .container-xl .container-xl .row .col-md .card .card-text, .container-lg .container-xl .row .col-md .card .card-text, .container-md .container-xl .row .col-md .card .card-text, .container-sm .container-xl .row .col-md .card .card-text {
+  color: white;
+}
 .container-fluid .container-xl .display-5, .container-xxl .container-xl .display-5, .container-xl .container-xl .display-5, .container-lg .container-xl .display-5, .container-md .container-xl .display-5, .container-sm .container-xl .display-5 {
   color: white;
 }

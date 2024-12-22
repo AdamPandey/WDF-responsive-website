@@ -46,6 +46,14 @@ $main-color: #3d67ff;
 .container-fluid{
     .container-xl .row .col-md .card{
         background-color: rgba(128, 128, 128, 0.5);
+
+        .card-title{
+            color:white;
+        }
+
+        .card-text{
+            color:white;
+        }
     }
 
     .container-xl .display-5{
