@@ -1,10 +1,29 @@
 @charset "UTF-8";
-body {
-  font-family: "Times New Roman", Times, serif, sans-serif;
+.navbar {
+  background-color: black;
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 500;
 }
-
-.bg-primary {
-  background-color: orange;
+.navbar .nav-items {
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.navbar .nav-link {
+  color: white;
+}
+.navbar .nav-link:hover {
+  color: gray;
+}
+.navbar .navbar-brand {
+  color: white;
+}
+.navbar .navbar-brand:hover {
+  color: gray;
+}
+.navbar .btn-primary {
+  background-color: black;
 }
 
 /*!
