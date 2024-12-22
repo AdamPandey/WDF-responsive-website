@@ -107,6 +107,60 @@
   text-align: center;
 }
 
+footer {
+  background-color: #212529;
+  color: white;
+  text-align: center;
+}
+footer .container-fluid, footer .container-xxl, footer .container-xl, footer .container-lg, footer .container-md, footer .container-sm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer h4, footer .h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+footer li {
+  margin-bottom: 5px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: #f0f0f0;
+}
+footer .copyright {
+  text-align: center;
+}
+footer .copyright p {
+  margin: 0;
+}
+@media (max-width: 768px) {
+  footer .row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer .col-md-4 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  footer .copyright {
+    text-align: center;
+  }
+}
+
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
