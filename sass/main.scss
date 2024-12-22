@@ -1,5 +1,6 @@
 $heading: "Inter Tight", serif;
 $main-color: #3d67ff;
+$secondary-color:rgb(18, 219, 0);
 
 
 .navbar {
@@ -92,39 +93,37 @@ $main-color: #3d67ff;
 
 .single {
     background: linear-gradient(to bottom, black, #3217e6); 
-    // This creates a gradient from black at the top to purple at the bottom
-  
+    
     .block {
-      // This class will center the content within the container
+    
       background: linear-gradient(to bottom, black, #3217e6); 
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh; // This ensures the content takes up the full height of the viewport
+      height: 100vh; 
   
       .row {
-        // This class will center the row within the learn container
+        
   
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%; // This ensures the row takes up the full width of the container
+        width: 100%; 
   
         .col-md-6 {
-          // This class will center the content within the column
+          
   
           display: flex;
           flex-direction: column;
           align-items: center;
   
           p {
-            // This class will center the paragraph text
+            
   
             text-align: center;
           }
   
           h1 {
-            // This class will center the heading text
   
             text-align: center;
           }
