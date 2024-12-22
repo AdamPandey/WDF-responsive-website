@@ -76,7 +76,35 @@
 }
 
 .learn {
-  padding: 300px;
+  padding: 100px;
+}
+
+.single {
+  background: linear-gradient(to bottom, black, #3217e6);
+}
+.single .block {
+  background: linear-gradient(to bottom, black, #3217e6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.single .block .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.single .block .row .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.single .block .row .col-md-6 p {
+  text-align: center;
+}
+.single .block .row .col-md-6 h1, .single .block .row .col-md-6 .h1 {
+  text-align: center;
 }
 
 /*!

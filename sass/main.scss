@@ -86,8 +86,51 @@ $main-color: #3d67ff;
 }
 
 .learn{
-    padding:300px;
+    padding:100px;
     
 }
+
+.single {
+    background: linear-gradient(to bottom, black, #3217e6); 
+    // This creates a gradient from black at the top to purple at the bottom
+  
+    .block {
+      // This class will center the content within the container
+      background: linear-gradient(to bottom, black, #3217e6); 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; // This ensures the content takes up the full height of the viewport
+  
+      .row {
+        // This class will center the row within the learn container
+  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; // This ensures the row takes up the full width of the container
+  
+        .col-md-6 {
+          // This class will center the content within the column
+  
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+  
+          p {
+            // This class will center the paragraph text
+  
+            text-align: center;
+          }
+  
+          h1 {
+            // This class will center the heading text
+  
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
 
 @import"../node_modules/bootstrap/scss/bootstrap.scss";
